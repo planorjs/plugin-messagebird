@@ -7,7 +7,7 @@ import PlanorServiceMessagebird from '@planorjs/plugin-messagebird'
 
 const credentials = {
   origin: '...',
-  accessKey: 'test@test.com'
+  accessKey: '...'
 }
 
 const service = new PlanorServiceMessagebird(credentials)
