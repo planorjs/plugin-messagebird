@@ -26,7 +26,7 @@ export default class PlanorServiceMessagebird extends PlanorService {
     return new Promise(function(resolve, reject) {
       const payload = {
         originator: creds.origin,
-        recipients: msgopts.recipients.map(r => r.replace('+', '')),
+        recipients: msgopts.to.map(r => r.replace('+', '')),
         body: msg
       }
 
