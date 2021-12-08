@@ -23,6 +23,8 @@ export default class PlanorServiceMessagebird extends PlanorService {
     const self = this
     const creds = super.getCredentials()
 
+    if (typeof msgopts.to == 'string') msgopts.to = [msgopts.to]
+
     return new Promise(function(resolve, reject) {
       const payload = {
         originator: creds.origin,
